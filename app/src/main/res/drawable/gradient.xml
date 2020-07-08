@@ -1,0 +1,19 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <!-- create gradient you want to use with the angle you want to use -->
+        <shape android:useLevel="true" android:shape="rectangle" >
+            <gradient
+                android:type="radial"
+                android:angle="315"
+                android:centerX="5%"
+                android:centerY="-40%"
+                android:gradientRadius="600dp"
+                android:endColor="@color/veryDarkPurple"
+                android:startColor="@color/colorPurple" />
+
+        </shape>
+    </item>
+
+
+</layer-list>

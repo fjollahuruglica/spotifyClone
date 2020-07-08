@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <!-- Main content -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/colorPrimary"
+            app:itemIconSize="20dp"
+            app:itemIconTint="@drawable/icon_color"
+            app:itemTextColor="@drawable/icon_color"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/menu_items" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/veryDarkPurple"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/spotify"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:elevation="60dp"
+            app:srcCompat="@mipmap/ic_launcher_foreground" />
+        <TextView
+            android:id="@+id/playlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/prox_black"
+            android:textColor="@color/colorAccent"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            android:text="@string/spotify"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="50dp"
+            android:visibility="gone"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="100dp"
+            android:text="@string/login"
+            android:textSize="20sp"
+            android:background="@drawable/corners7"
+            app:layout_constraintTop_toBottomOf="@id/spotify" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

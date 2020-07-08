@@ -1,0 +1,15 @@
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<item  android:gravity="center">
+    <!-- create gradient you want to use with the angle you want to use -->
+    <shape android:shape="rectangle" >
+        <solid android:color="@color/evenDarkerGray"/>
+
+
+        <corners android:radius="10dp" />
+
+    </shape>
+</item>
+
+</layer-list>

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/veryDarkPurple"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/premium_gradient">
+        <TextView
+            android:id="@+id/artist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:fontFamily="@font/prox_black"
+            android:textColor="@color/colorAccent"
+            android:textAlignment="center"
+            android:text="@string/premium"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="90dp"
+            android:layout_marginStart="90dp"
+            android:background="@drawable/corners2"
+            android:layout_marginTop="40dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="40dp"
+            android:textStyle="bold"
+            android:textColor="@color/veryDarkPurple"
+            android:text="@string/get_premium" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/corners3"
+            android:weightSum="2">
+            <TextView
+                android:id="@+id/plan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/prox_black"
+                android:textColor="@color/colorAccent"
+                android:textAlignment="textStart"
+                android:text="Spotify Free"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/planCurrent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/prox_black"
+                android:textColor="@color/textColor"
+                android:textAlignment="textEnd"
+                android:text="CURRENT PLAN"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/corners4"
+            android:weightSum="2">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+            <TextView
+                android:id="@+id/individual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_weight="1.5"
+                android:fontFamily="@font/prox_black"
+                android:textColor="@color/colorAccent"
+                android:textAlignment="textStart"
+                android:text="Premium Individual"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/free"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_weight="0.5"
+                android:fontFamily="@font/prox_black"
+                android:textColor="@color/colorAccent"
+                android:textAlignment="textEnd"
+                android:text="Free"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/details_ind"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="40dp"
+                android:paddingStart="40dp"
+                android:layout_weight="1"
+                android:paddingBottom="20dp"
+                android:fontFamily="@font/prox_b"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:text="Add-free music • Download to listen offline • Unlimited skips • On-demand playback • Cancel anytime"
+                android:textSize="18sp" />
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="70dp"
+                android:layout_marginStart="70dp"
+                android:background="@drawable/corners2"
+                android:textSize="16sp"
+                android:layout_marginBottom="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/veryDarkPurple"
+                android:text="TRY 1 MONTH FREE" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/corners5"
+            android:weightSum="2">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <TextView
+                    android:id="@+id/student"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:layout_weight="1.5"
+                    android:fontFamily="@font/prox_black"
+                    android:textColor="@color/colorAccent"
+                    android:textAlignment="textStart"
+                    android:text="Premium Student"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/frees"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:layout_weight="0.5"
+                    android:fontFamily="@font/prox_black"
+                    android:textColor="@color/colorAccent"
+                    android:textAlignment="textEnd"
+                    android:text="Free"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/details_std"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="40dp"
+                android:paddingStart="40dp"
+                android:layout_weight="1"
+                android:paddingBottom="20dp"
+                android:fontFamily="@font/prox_b"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:text="3 apps, 1 low price: Includes access to Hulu (ad-supported plan) and SHOWTIME • Ad-free music • Download to listen offline • Unlimited skips • On-demand playback • Cancel anytime"
+                android:textSize="18sp" />
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="70dp"
+                android:layout_marginStart="70dp"
+                android:background="@drawable/corners2"
+                android:textSize="16sp"
+                android:layout_marginBottom="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/veryDarkPurple"
+                android:text="TRY 1 MONTH FREE" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="80dp"
+            android:background="@drawable/corners6"
+            android:weightSum="2">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <TextView
+                    android:id="@+id/family"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:layout_weight="1.5"
+                    android:fontFamily="@font/prox_black"
+                    android:textColor="@color/colorAccent"
+                    android:textAlignment="textStart"
+                    android:text="Premium Family"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/freef"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:layout_weight="0.5"
+                    android:fontFamily="@font/prox_black"
+                    android:textColor="@color/colorAccent"
+                    android:textAlignment="textEnd"
+                    android:text="Free"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/details_fam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="40dp"
+                android:paddingStart="40dp"
+                android:layout_weight="1"
+                android:paddingBottom="20dp"
+                android:fontFamily="@font/prox_b"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:text="Up to 6 Premium or Kids accounts • Spotify Kids app • Block explicit music • Family Mix: shared playlist •  Ad-free music • Download to listen offline • Unlimited skips • On-demand playback • Cancel anytime"
+                android:textSize="18sp" />
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="70dp"
+                android:layout_marginStart="70dp"
+                android:background="@drawable/corners2"
+                android:textSize="16sp"
+                android:layout_marginBottom="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/veryDarkPurple"
+                android:text="TRY 1 MONTH FREE" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

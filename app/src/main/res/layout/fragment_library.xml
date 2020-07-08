@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/veryDarkPurple">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:textSize="35sp"
+        android:textColor="@color/colorAccent"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="Music"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:paddingStart="0dp"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        app:tabIndicatorColor="@color/greenSpotify"
+        app:tabIndicatorFullWidth="false"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/colorAccent"
+        app:tabTextAppearance="@style/MyCustomTextAppearance"
+        app:tabTextColor="@color/textColor">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabPlaylist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Playlists"
+            android:textAllCaps="false"
+            app:tabPadding="0dp" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabArtist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Artists"
+            app:tabPadding="0dp" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabAlbums"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Albums"
+            app:tabPadding="0dp" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tablayout"/>
+
+</RelativeLayout>
